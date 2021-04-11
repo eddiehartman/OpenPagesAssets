@@ -1,2 +1,0 @@
-select name, status_id, updated_ts, form from {entry.getString("history_flag")== "N" ? "epolicy.xdocument" : "epolicy.xdocument_history"} 
-where id = '{id}' and is_deleted = 'N' 

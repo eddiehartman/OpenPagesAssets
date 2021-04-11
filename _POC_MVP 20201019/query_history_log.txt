@@ -1,2 +1,0 @@
-select distinct log.DB2_FUNC, log.XDOCUMENT_ID, log.FILE_NAME, log.NOTES_EMAIL, log.TS, 
-log.ACTION, log.OLD_VALUE, log.NEW_VALUE, log.name from epolicy.l_xdocument as log where xdocument_id = '{id}'

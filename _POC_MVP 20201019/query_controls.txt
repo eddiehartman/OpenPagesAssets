@@ -1,6 +1,0 @@
-select distinct  parameter.name, param_type.name, parameter.variable, parameter.description
-  from
-       epolicy.parameter as parameter
-       inner join epolicy.policy_parameter as policy_parameter on policy_parameter.parameter_id = parameter.id
-       inner join epolicy.parameter_type as param_type on param_type.id = parameter.parameter_type_id
-  where policy_parameter.policy_id='{policy_id}'

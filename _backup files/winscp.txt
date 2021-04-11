@@ -1,4 +1,0 @@
-option confirm off
-open sftp://itrmop:oVrfvkuxPPzpNdJxxRx8bwx@pokgsa.ibm.com -hostkey="ssh-rsa 1024 23:8e:5a:fb:79:1a:11:36:de:16:28:3a:88:79:70:a1"
-put /soldir/POC_MVP/risk_20200508_132726.csv /gsa/pokgsa-p7/04/sarmecm_uat/Openpages/
-exit

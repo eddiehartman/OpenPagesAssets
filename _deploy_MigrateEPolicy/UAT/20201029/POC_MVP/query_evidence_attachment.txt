@@ -1,1 +1,0 @@
-select name , data , comment from epolicy.evidence where id = '{id}'

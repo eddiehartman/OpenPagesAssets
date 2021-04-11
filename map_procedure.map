@@ -1,4 +1,0 @@
-name=CL-{procedureIndex}-{Policy_Name}
-Description={Description}
-GTS-Clause:Clause Content={GTS-Clause:Clause Content}
-GTS-Clause:In Scope=Yes
