@@ -1,0 +1,5 @@
+option confirm off
+open sftp://itrmop:z.WK_rV#*@K+bqr&~w#:w&qb@pokgsa.ibm.com -hostkey="ssh-ed25519 255 ZjS8/Wop64lgeZCF8vkftYwRIDBKjhbsAXV0w/pMrYs="
+open sftp://hartman:mirabentekami23a@pokgsa.ibm.com -hostkey="ssh-ed25519 255 ZjS8/Wop64lgeZCF8vkftYwRIDBKjhbsAXV0w/pMrYs="
+put C:\SDISollutionDirectorySecond\POC_MVP\risk.csv /gsa/bldgsa/home/s/d/sdi2op/web/public/SDIfiles/
+exit

@@ -1,0 +1,7 @@
+select log.DB2_FUNC as Function, log.EVIDENCE_ID, log.EVIDENCE_NAME , log.EVIDENCE_TYPE ,
+log.DOCUMENT_ID, log.DOCUMENT_NAME, log.DOCUMENT_REVISION,
+CASE WHEN log.ATTACHMENT_FORMAT =  1 THEN 'MAIL'
+ELSE 'FILE'
+END AS format,
+log.ACTION as Operation, log.TS, log.OLD_VALUE, log.NEW_VALUE, log.NOTES_EMAIL from epolicy.L_EVIDENCE log
+where log.document_id = '{id}' and log.document_revision = '{revision}'  and log.document_revision_count = '{revision_count}'

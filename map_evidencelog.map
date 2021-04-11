@@ -1,0 +1,13 @@
+Template name={Use_Template_Name}
+Template version={document_version}
+Rev={revision}
+Function={mapFunction(entry.getString("FUNCTION"))}
+Evidence Name={EVIDENCE_NAME}
+File name={namePrefix}-{ePolicy_Account_Name}-v{document_version}-{nameSuffix}Evidence Log.xlsx
+Evidence Type={EVIDENCE_TYPE}
+Attachment Format={FORMAT}
+Delayed={evidence_delayed}
+Exception={evidence_exception}
+Status Type={entry.EVIDENCE_STATUS == null ? null : entry.getString("EVIDENCE_STATUS").toUpperCase()}
+Updated by={NOTES_EMAIL}
+Updated On={entry.TS == null ? null : (formatDate(entry.getObject("TS"), "yyyy-MM-dd HH.mm.ss.SSSSSS z"))}

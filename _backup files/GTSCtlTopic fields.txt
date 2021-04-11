@@ -1,0 +1,14 @@
+GTSCtlTopic fields:
+
+Comment
+Description
+Name
+OPSS-Shared-Lib:Library ID
+GTS-CtlTopic:Approval Date
+GTS-CtlTopic:Approved By
+GTS-CtlTopic:Assignee
+GTS-CtlTopic:Change Comment
+GTS-CtlTopic:Reject Comment
+GTS-CtlTopic:Review Comment
+GTS-CtlTopic:Reviewer
+GTS-CtlTopic:Status

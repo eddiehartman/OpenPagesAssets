@@ -1,0 +1,12 @@
+Template name
+Template version
+Rev
+Evidence Name
+Evidence Type
+Attachment Format
+Delayed
+Exception
+Comment
+Status Type
+Updated By
+Updated On

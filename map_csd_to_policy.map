@@ -1,0 +1,34 @@
+Description=Migrated from ePolicy: {name}
+GTS-Policy:Regulatory Ctl={_regulatoryControls}
+GTS-Policy:Additional Ctl={_additionalControls}
+GTS-Policy:Customer Rep={EMail}
+GTS-Policy:DPE={_UseDPE}
+OPSS-Pol:Approval Status
+OPSS-Pol:Change Significance
+OPSS-Pol:Common Name=CSD-{ePolicy_Account_Name}-v{document_version}
+OPSS-Pol:OpenPolicyRevision
+OPSS-Pol:Publishing Status
+OPSS-Pol:ReopenPolicy
+OPSS-Pol:StatusOLD={mapStatus(entry.csd_status, "Mapping CSD to Policy")}
+OPSS-Pol:Status=New
+OPSS-Pol:Type=CSD
+OPSS-Pol:Next Review Date={CURRENT_APPROVAL_DATE}
+OPSS-Pol:Published Date={CURRENT_APPROVAL_DATE}
+OPSS-Pol:Version Date={NEXT_REVIEW_DATE}
+GTS-Account:AccCountry={FULL_NAME}
+GTS-Account:AccAlias={SHORTNAME} 
+OPSS-Pol:Version={epolicy_policy_version}
+GTS-WF-Shared:TComment=This policy was migrated from ePolicy on {formatDate(new Date())}
+OPSS-Pol:RevDesc=This policy was migrated from ePolicy \
+   Policy: CSD-{ePolicy_Account_Name}-v{epolicy_policy_version}-rev{csd_revision}\
+   ePolicy ID: {CSD_id} \
+   Policy File name: {CSD_Filename}.{CSD_Fileext}\
+   Template version: {CSD_Template_Version} \
+   Status: {csd_status} \
+   Revision: {CSD_Revision} \
+   Last Updated: {formatDate(entry.CSD_UPDATED_TS, "yyyy-MM-dd HH:mm:ss z")} \
+   ----------------- \
+   Account short name: {ePolicy_Account_ShortName} \
+   Country: {Country_FullName} \
+   Environment: {ENVIRONMENT} \
+   Sub customer: {ACCOUNT_NUMBER}   

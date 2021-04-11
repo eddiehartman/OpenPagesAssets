@@ -1,0 +1,15 @@
+{
+	"epolicy":{
+		"userName" : "db2inst1",
+		"password" :"Epolicy2ibm@123",
+		"hostname" :"mopbzp174025.fr.dst.ibm.com",
+		"port" 	:"50000",
+		"database" :"POLICYL"
+	},
+	"accounts":[
+		"COPAcabana",
+		"WHU"
+	]
+	
+		
+}	
