@@ -1,0 +1,1 @@
+select * from epolicy.csd_rv_xdocument where xdocument_id={ID} and revision={REVISION} and revision_count={REVISION_COUNT} order by ref asc

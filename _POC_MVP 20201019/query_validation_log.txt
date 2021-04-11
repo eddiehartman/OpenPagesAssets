@@ -1,0 +1,4 @@
+select user_action.DB2_FUNC, user_action.user_name as USER_NOTES_EMAIL, user_action.ACTION_NAME, user_action.NOTES_EMAIL, user_action.PERFORMER_ROLE, user_action.TS, 
+user_action.ACT, user_action.ACTION_STATUS, user_action.COMMENT 
+from epolicy.l_xdocument_user_action user_action 
+where xdocument_id = '{id}' and xdocument_revision = '{revision}' and xdocument_revision_count = '{revision_count}'

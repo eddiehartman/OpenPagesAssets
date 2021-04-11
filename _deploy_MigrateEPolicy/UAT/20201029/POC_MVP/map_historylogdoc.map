@@ -1,0 +1,17 @@
+NAME={namePrefix}-{ePolicy_Account_Name}-v{document_version}-{nameSuffix}History Log
+Title=History Log
+Description=History Log
+OPSS-File:Document Type=Report
+OPSS-File:Active={entry.STATUS == null ? null : (entry.STATUS[0] == 'Obsolete' ? 'No' : 'Yes')}
+OPSS-File:Abstract=This History log file was migrated from ePolicy \
+   Policy: CSD-{ePolicy_Account_Name}-v{epolicy_policy_version}\
+   Policy File name: {CSD_Filename}.{CSD_Fileext}\
+   Status: {csd_status} \
+   Revision: {CSD_Revision} \
+   Last Updated: {formatDate(entry.CSD_UPDATED_TS, "yyyy-MM-dd HH:mm:ss z")} \
+   ----------------- \
+   Account short name: {ePolicy_Account_ShortName} \
+   Country: {Country_FullName} \
+   Environment: {ENVIRONMENT} \
+   Sub customer: {ACCOUNT_NUMBER}
+  

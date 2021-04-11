@@ -1,0 +1,128 @@
+{
+    "fields": {
+        "field": [{
+            "dataType": "ENUM_TYPE",
+            "id": "222",
+            "name": "OPSS-Shared-Close:Ignore Trigger",
+            "enumValue": {
+                "id": "331",
+                "name": "No",
+                "localizedLabel": "No",
+                "index": 2,
+                "hidden": false
+            }
+        }, {
+            "dataType": "ENUM_TYPE",
+            "id": "221",
+            "name": "OPSS-Shared-Close:RdyToCls",
+            "enumValue": {
+                "id": "329",
+                "name": "No",
+                "localizedLabel": "No",
+                "index": 2,
+                "hidden": false
+            }
+        }, {
+            "dataType": "ENUM_TYPE",
+            "id": "424",
+            "name": "OPSS-Finding:Impact",
+            "enumValue": {
+                "id": "1300",
+                "name": "Significant",
+                "localizedLabel": "Significant",
+                "index": 1,
+                "hidden": false
+            }
+        }, {
+            "dataType": "DATE_TYPE",
+            "id": "435",
+            "name": "OPSS-Finding:MgmtActCompletion"
+        }, {
+            "dataType": "DATE_TYPE",
+            "id": "434",
+            "name": "OPSS-Finding:MgmtExpCompletion"
+        }, {
+            "dataType": "STRING_TYPE",
+            "id": "432",
+            "name": "OPSS-Finding:MgmtOwner"
+        }, {
+            "dataType": "ENUM_TYPE",
+            "id": "438",
+            "name": "OPSS-Finding:MgmtResp"
+        }, {
+            "dataType": "STRING_TYPE",
+            "id": "439",
+            "name": "OPSS-Finding:MgmtRespComment"
+        }, {
+            "dataType": "ENUM_TYPE",
+            "id": "437",
+            "name": "OPSS-Finding:MgmtRespStat"
+        }, {
+            "dataType": "STRING_TYPE",
+            "id": "436",
+            "name": "OPSS-Finding:MgmtSchedChgReason"
+        }, {
+            "dataType": "DATE_TYPE",
+            "id": "433",
+            "name": "OPSS-Finding:MgmtSchedCompletion"
+        }, {
+            "dataType": "DATE_TYPE",
+            "id": "427",
+            "name": "OPSS-Finding:Preparation Complete Date"
+        }, {
+            "dataType": "STRING_TYPE",
+            "id": "426",
+            "name": "OPSS-Finding:Preparer"
+        }, {
+            "dataType": "ENUM_TYPE",
+            "id": "425",
+            "name": "OPSS-Finding:Priority",
+            "enumValue": {
+                "id": "1289",
+                "name": "Not Determined",
+                "localizedLabel": "Not Determined",
+                "index": 4,
+                "hidden": false
+            }
+        }, {
+            "dataType": "STRING_TYPE",
+            "id": "428",
+            "name": "OPSS-Finding:Recommendation"
+        }, {
+            "dataType": "ENUM_TYPE",
+            "id": "423",
+            "name": "OPSS-Finding:Reportable",
+            "enumValue": {
+                "id": "1298",
+                "name": "Yes",
+                "localizedLabel": "Yes",
+                "index": 1,
+                "hidden": false
+            }
+        }, {
+            "dataType": "STRING_TYPE",
+            "id": "431",
+            "name": "OPSS-Finding:Review Comments"
+        }, {
+            "dataType": "DATE_TYPE",
+            "id": "430",
+            "name": "OPSS-Finding:Review Complete Date"
+        }, {
+            "dataType": "STRING_TYPE",
+            "id": "429",
+            "name": "OPSS-Finding:Reviewer"
+        }, {
+            "dataType": "ENUM_TYPE",
+            "id": "422",
+            "name": "OPSS-Finding:Status",
+            "enumValue": {
+                "id": "1296",
+                "name": "Open",
+                "localizedLabel": "Open",
+                "index": 1,
+                "hidden": false
+            }
+        }]
+    },
+    "typeDefinitionId": "58"
+}

@@ -1,0 +1,839 @@
+{
+    "name": "Incident",
+    "localizedLabel": "Incident",
+    "description": "Unified Object Type",
+    "jspPath": "/propertyForm/renderProperties.jsp",
+    "id": "60",
+    "rootFolderPath": "/_op_sox/Project/Default/ICDocumentation/Incidents",
+    "rootFolderId": "459",
+    "fieldDefinitions": {
+        "fieldDefinition": [{
+            "id": "28",
+            "name": "Resource ID",
+            "localizedLabel": "Resource ID",
+            "dataType": "ID_TYPE",
+            "required": true,
+            "description": "Resource ID",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "62",
+            "name": "Comment",
+            "localizedLabel": "Comment",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "description": "Version Comment",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "59",
+            "name": "Created By",
+            "localizedLabel": "Created By",
+            "dataType": "INTEGER_TYPE",
+            "required": true,
+            "description": "The name of the user who created this object. It is set by the application and cannot be edited.",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "58",
+            "name": "Creation Date",
+            "localizedLabel": "Creation Date",
+            "dataType": "DATE_TYPE",
+            "required": true,
+            "description": "The date and time this object was created. It is set by the application and cannot be edited.",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "56",
+            "name": "Description",
+            "localizedLabel": "Description",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "description": "Use to enter or edit a description of this object.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "60",
+            "name": "Last Modification Date",
+            "localizedLabel": "Last Modification Date",
+            "dataType": "DATE_TYPE",
+            "required": true,
+            "description": "The most recent date and time this object was changed. It is set by the application and cannot be edited.",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "61",
+            "name": "Last Modified By",
+            "localizedLabel": "Last Modified By",
+            "dataType": "INTEGER_TYPE",
+            "required": true,
+            "description": "The name of the last user who edited this object. It is set by the application and cannot be edited.",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "57",
+            "name": "Location",
+            "localizedLabel": "Folder",
+            "dataType": "STRING_TYPE",
+            "required": true,
+            "description": "The path of this object within this object hierarchy. It cannot be edited after it is created.",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "55",
+            "name": "Name",
+            "localizedLabel": "Name",
+            "dataType": "STRING_TYPE",
+            "required": true,
+            "description": "The name of this object.",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "65",
+            "name": "Orphan",
+            "localizedLabel": "Orphan",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "description": "Displays the orphan status of the object.",
+            "computed": false,
+            "readOnly": true,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "491",
+            "name": "OPSS-Inc:Closed Date",
+            "localizedLabel": "Closed Date",
+            "dataType": "DATE_TYPE",
+            "required": false,
+            "description": "Use to record the date when this incident was closed.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "490",
+            "name": "OPSS-Inc:Discovery Date",
+            "localizedLabel": "Discovery Date",
+            "dataType": "DATE_TYPE",
+            "required": false,
+            "description": "Use to record the date when this incident was discovered.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "503",
+            "name": "OPSS-Inc:Fine Amount",
+            "localizedLabel": "Fine Amount",
+            "dataType": "CURRENCY_TYPE",
+            "required": false,
+            "description": "Use to indicate the amount of the fine.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "489",
+            "name": "OPSS-Inc:Occurrence Date",
+            "localizedLabel": "Occurrence Date",
+            "dataType": "DATE_TYPE",
+            "required": false,
+            "description": "Use to record the date when this incident took place.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "485",
+            "name": "OPSS-Inc:Owner",
+            "localizedLabel": "Owner",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "description": "Use to assign a person ownership or responsibility for this Incident.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "495",
+            "name": "OPSS-Inc:PolViolated",
+            "localizedLabel": "Policy Violated?",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "description": "Use to indicate if a policy was violated.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1447",
+                    "name": "Yes",
+                    "localizedLabel": "Yes",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1448",
+                    "name": "No",
+                    "localizedLabel": "No",
+                    "index": 2,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "492",
+            "name": "OPSS-Inc:PotentExp",
+            "localizedLabel": "Potential Exposure",
+            "dataType": "MULTI_VALUE_ENUM",
+            "required": false,
+            "description": "Use to indicate the potential exposure of the matter to the Company",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1440",
+                    "name": "Financial",
+                    "localizedLabel": "Financial",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1441",
+                    "name": "Reputational",
+                    "localizedLabel": "Reputational",
+                    "index": 2,
+                    "hidden": false
+                }, {
+                    "id": "1442",
+                    "name": "Regulatory",
+                    "localizedLabel": "Regulatory",
+                    "index": 3,
+                    "hidden": false
+                }, {
+                    "id": "1443",
+                    "name": "Legal",
+                    "localizedLabel": "Legal",
+                    "index": 4,
+                    "hidden": false
+                }, {
+                    "id": "1444",
+                    "name": "Business",
+                    "localizedLabel": "Business",
+                    "index": 5,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "493",
+            "name": "OPSS-Inc:PotentExpDesc",
+            "localizedLabel": "Potential Exposure Description",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "description": "Use to enter a description of the potential exposure.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "488",
+            "name": "OPSS-Inc:Priority",
+            "localizedLabel": "Priority",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "description": "Use to indicate the level of urgency for investigating this incident.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1435",
+                    "name": "Critical",
+                    "localizedLabel": "Critical",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1436",
+                    "name": "High",
+                    "localizedLabel": "High",
+                    "index": 2,
+                    "hidden": false
+                }, {
+                    "id": "1437",
+                    "name": "Medium",
+                    "localizedLabel": "Medium",
+                    "index": 3,
+                    "hidden": false
+                }, {
+                    "id": "1438",
+                    "name": "Low",
+                    "localizedLabel": "Low",
+                    "index": 4,
+                    "hidden": false
+                }, {
+                    "id": "1439",
+                    "name": "Not Determined",
+                    "localizedLabel": "Not Determined",
+                    "index": 5,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "497",
+            "name": "OPSS-Inc:RegFine",
+            "localizedLabel": "Regulatory Fine",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "description": "Use to indicate if there was a regulatory fine as a result of the incident.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1451",
+                    "name": "Yes",
+                    "localizedLabel": "Yes",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1452",
+                    "name": "No",
+                    "localizedLabel": "No",
+                    "index": 2,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "494",
+            "name": "OPSS-Inc:RegViolated",
+            "localizedLabel": "Regulation Violated?",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "description": "Use to indicate if a regulation was violated.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1445",
+                    "name": "Yes",
+                    "localizedLabel": "Yes",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1446",
+                    "name": "No",
+                    "localizedLabel": "No",
+                    "index": 2,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "496",
+            "name": "OPSS-Inc:RepToReg",
+            "localizedLabel": "Reported to Regulator?",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "description": "Use to indicate if the incident was reported to regulator(s)).",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1449",
+                    "name": "Yes",
+                    "localizedLabel": "Yes",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1450",
+                    "name": "No",
+                    "localizedLabel": "No",
+                    "index": 2,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "484",
+            "name": "OPSS-Inc:Source",
+            "localizedLabel": "Source/Origin",
+            "dataType": "MULTI_VALUE_ENUM",
+            "required": false,
+            "description": "Use to indicate from where the incident came.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1418",
+                    "name": "Criminal Law Enforcement Inquiry/Investigation",
+                    "localizedLabel": "Criminal Law Enforcement Inquiry/Investigation",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1419",
+                    "name": "Customer Complaint",
+                    "localizedLabel": "Customer Complaint",
+                    "index": 2,
+                    "hidden": false
+                }, {
+                    "id": "1420",
+                    "name": "Compliance Review/Self-Assessment",
+                    "localizedLabel": "Compliance Review/Self-Assessment",
+                    "index": 3,
+                    "hidden": false
+                }, {
+                    "id": "1421",
+                    "name": "Consent Order/Settlement Obligations",
+                    "localizedLabel": "Consent Order/Settlement Obligations",
+                    "index": 4,
+                    "hidden": false
+                }, {
+                    "id": "1422",
+                    "name": "Employee Whistleblower",
+                    "localizedLabel": "Employee Whistleblower",
+                    "index": 5,
+                    "hidden": false
+                }, {
+                    "id": "1423",
+                    "name": "Internal Investigation",
+                    "localizedLabel": "Internal Investigation",
+                    "index": 6,
+                    "hidden": false
+                }, {
+                    "id": "1424",
+                    "name": "Internal Audit Finding",
+                    "localizedLabel": "Internal Audit Finding",
+                    "index": 7,
+                    "hidden": false
+                }, {
+                    "id": "1425",
+                    "name": "Lawsuit",
+                    "localizedLabel": "Lawsuit",
+                    "index": 8,
+                    "hidden": false
+                }, {
+                    "id": "1426",
+                    "name": "Regulatory Exam/Inquiry",
+                    "localizedLabel": "Regulatory Exam/Inquiry",
+                    "index": 9,
+                    "hidden": false
+                }, {
+                    "id": "1427",
+                    "name": "Regulatory Enforcement Inquiry/Investigation",
+                    "localizedLabel": "Regulatory Enforcement Inquiry/Investigation",
+                    "index": 10,
+                    "hidden": false
+                }, {
+                    "id": "1428",
+                    "name": "3rd Party Administrator/Agent/Broker",
+                    "localizedLabel": "3rd Party Administrator/Agent/Broker",
+                    "index": 11,
+                    "hidden": false
+                }, {
+                    "id": "1429",
+                    "name": "Others",
+                    "localizedLabel": "Others",
+                    "index": 12,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "486",
+            "name": "OPSS-Inc:Status",
+            "localizedLabel": "Status",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "description": "Use to set the current status of this incident.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1430",
+                    "name": "Not Started",
+                    "localizedLabel": "Not Started",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1431",
+                    "name": "In Progress",
+                    "localizedLabel": "In Progress",
+                    "index": 2,
+                    "hidden": false
+                }, {
+                    "id": "1432",
+                    "name": "Under Review",
+                    "localizedLabel": "Under Review",
+                    "index": 3,
+                    "hidden": false
+                }, {
+                    "id": "1433",
+                    "name": "Approved",
+                    "localizedLabel": "Approved",
+                    "index": 4,
+                    "hidden": false
+                }, {
+                    "id": "1434",
+                    "name": "Rejected",
+                    "localizedLabel": "Rejected",
+                    "index": 5,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "483",
+            "name": "OPSS-Inc:Type",
+            "localizedLabel": "Type",
+            "dataType": "MULTI_VALUE_ENUM",
+            "required": false,
+            "description": "Use to indicate which categories apply to this incident.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1414",
+                    "name": "Regulatory Compliance",
+                    "localizedLabel": "Regulatory Compliance",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1415",
+                    "name": "Legal Compliance",
+                    "localizedLabel": "Legal Compliance",
+                    "index": 2,
+                    "hidden": false
+                }, {
+                    "id": "1416",
+                    "name": "Information Security",
+                    "localizedLabel": "Information Security",
+                    "index": 3,
+                    "hidden": false
+                }, {
+                    "id": "1417",
+                    "name": "IT",
+                    "localizedLabel": "IT",
+                    "index": 4,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "487",
+            "name": "OPSS-Inc:What Happened",
+            "localizedLabel": "What Happened",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "description": "Use to enter  a description of the circumstances surrounding this incident.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "505",
+            "name": "OPSS-Inc-IT:Application",
+            "localizedLabel": "Application",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": [{
+                    "dependencyType": "VISIBILITY",
+                    "logicalOperator": "AND",
+                    "controllerFieldMapType": [{
+                        "typeDefinitionId": "60",
+                        "controllerFieldDefinitionId": "483",
+                        "controllerValueType": [{
+                            "controllerValueName": "IT",
+                            "dependentValue": []
+                        }]
+                    }]
+                }]
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "506",
+            "name": "OPSS-Inc-IT:Host",
+            "localizedLabel": "Host",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": [{
+                    "dependencyType": "VISIBILITY",
+                    "logicalOperator": "AND",
+                    "controllerFieldMapType": [{
+                        "typeDefinitionId": "60",
+                        "controllerFieldDefinitionId": "483",
+                        "controllerValueType": [{
+                            "controllerValueName": "IT",
+                            "dependentValue": []
+                        }]
+                    }]
+                }]
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "507",
+            "name": "OPSS-Inc-IT:Host IP Address",
+            "localizedLabel": "Host IP Address",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": [{
+                    "dependencyType": "VISIBILITY",
+                    "logicalOperator": "AND",
+                    "controllerFieldMapType": [{
+                        "typeDefinitionId": "60",
+                        "controllerFieldDefinitionId": "483",
+                        "controllerValueType": [{
+                            "controllerValueName": "IT",
+                            "dependentValue": []
+                        }]
+                    }]
+                }]
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "508",
+            "name": "OPSS-Inc-IT:Host Status",
+            "localizedLabel": "Host Status",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": [{
+                    "dependencyType": "VISIBILITY",
+                    "logicalOperator": "AND",
+                    "controllerFieldMapType": [{
+                        "typeDefinitionId": "60",
+                        "controllerFieldDefinitionId": "483",
+                        "controllerValueType": [{
+                            "controllerValueName": "IT",
+                            "dependentValue": []
+                        }]
+                    }]
+                }]
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1458",
+                    "name": "OK",
+                    "localizedLabel": "OK",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1459",
+                    "name": "Up",
+                    "localizedLabel": "Up",
+                    "index": 2,
+                    "hidden": false
+                }, {
+                    "id": "1460",
+                    "name": "Down",
+                    "localizedLabel": "Down",
+                    "index": 3,
+                    "hidden": false
+                }, {
+                    "id": "1461",
+                    "name": "Critical",
+                    "localizedLabel": "Critical",
+                    "index": 4,
+                    "hidden": false
+                }, {
+                    "id": "1462",
+                    "name": "Unknown",
+                    "localizedLabel": "Unknown",
+                    "index": 5,
+                    "hidden": false
+                }]
+            }
+        }, {
+            "id": "509",
+            "name": "OPSS-Inc-IT:Message",
+            "localizedLabel": "Message",
+            "dataType": "STRING_TYPE",
+            "required": false,
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": [{
+                    "dependencyType": "VISIBILITY",
+                    "logicalOperator": "AND",
+                    "controllerFieldMapType": [{
+                        "typeDefinitionId": "60",
+                        "controllerFieldDefinitionId": "483",
+                        "controllerValueType": [{
+                            "controllerValueName": "IT",
+                            "dependentValue": []
+                        }]
+                    }]
+                }]
+            },
+            "enumValues": {
+                "enumValue": []
+            }
+        }, {
+            "id": "504",
+            "name": "OPSS-Inc-IT:Severity",
+            "localizedLabel": "Severity",
+            "dataType": "ENUM_TYPE",
+            "required": false,
+            "description": "Use to indicate the magnitude of the financial and non-financial loss impacts.",
+            "computed": false,
+            "readOnly": false,
+            "dependencies": {
+                "dependency": []
+            },
+            "enumValues": {
+                "enumValue": [{
+                    "id": "1453",
+                    "name": "Critical",
+                    "localizedLabel": "Critical",
+                    "index": 1,
+                    "hidden": false
+                }, {
+                    "id": "1454",
+                    "name": "High",
+                    "localizedLabel": "High",
+                    "index": 2,
+                    "hidden": false
+                }, {
+                    "id": "1455",
+                    "name": "Medium",
+                    "localizedLabel": "Medium",
+                    "index": 3,
+                    "hidden": false
+                }, {
+                    "id": "1456",
+                    "name": "Low",
+                    "localizedLabel": "Low",
+                    "index": 4,
+                    "hidden": false
+                }, {
+                    "id": "1457",
+                    "name": "Not Determined",
+                    "localizedLabel": "Not Determined",
+                    "index": 5,
+                    "hidden": false
+                }]
+            }
+        }]
+    },
+    "fileTypes": {
+        "fileType": []
+    }
+}

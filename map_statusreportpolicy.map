@@ -1,0 +1,2 @@
+status_line={ePolicy_Account_Name}-{csd_name}-v{csd_template_version}-({csd_id})rev{csd_revision} > {policy_name}
+policy_name={policy_name}

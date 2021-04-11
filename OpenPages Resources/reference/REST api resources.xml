@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+    <resources base="/grc/api/">
+        <resource path="security/users">
+            <method name="POST">
+                <request>
+                    <representation mediaType="application/json" />
+                </request>
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/groups">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/permissions">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/roles">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/roles">
+                <param name="id" style="template" />
+                <method name="POST">
+                    <request>
+                        <param name="role" style="query" />
+                        <param name="context" style="query" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/password">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <request />
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <request />
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/roles">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <request>
+                        <param name="role" style="query" default="" />
+                        <param name="context" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+        </resource>
+        <resource path="types">
+            <method name="GET">
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <resource path="{typeId}">
+                <param name="typeId" style="template" />
+                <method name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="includeFieldDefinitions" style="query" type="xs:boolean" default="true" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{typeId}/associations">
+                <param name="typeId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{typeId}/associations/{associationId}">
+                <param name="typeId" style="template" />
+                <param name="associationId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{typeId}/associations/parents">
+                <param name="typeId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{typeId}/associations/children">
+                <param name="typeId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{typeId}">
+                <param name="typeId" style="template" />
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="includeFieldDefinitions" style="query" type="xs:boolean" default="true" />
+            </resource>
+            <resource path="{typeId}/associations">
+                <param name="typeId" style="template" />
+            </resource>
+            <resource path="{typeId}/associations/{associationId}">
+                <param name="typeId" style="template" />
+                <param name="associationId" style="template" />
+            </resource>
+            <resource path="{typeId}/associations/parents">
+                <param name="typeId" style="template" />
+            </resource>
+            <resource path="{typeId}/associations/children">
+                <param name="typeId" style="template" />
+            </resource>
+        </resource>
+        <resource path="security/permissions">
+            <method name="GET">
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="query">
+            <method name="GET">
+                <request>
+                    <param name="q" style="query" />
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="skipCount" style="query" type="xs:int" default="0" />
+                </request>
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <method name="POST">
+                <request>
+                    <representation mediaType="application/json" />
+                </request>
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+        </resource>
+        <resource path="security/roles">
+            <method name="GET">
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/access">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/permissions">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="workflow">
+            <resource path="jobtypes">
+                <method name="GET">
+                    <request>
+                        <param name="typeId" style="query" default="" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobtypes/{jobTypeId}">
+                <param name="jobTypeId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobtypes/{jobTypeId}/owners">
+                <param name="jobTypeId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobtypes/{jobTypeId}/tasks">
+                <param name="jobTypeId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs/{jobId}">
+                <param name="jobId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs">
+                <method name="GET">
+                    <request>
+                        <param name="isOwner" style="query" />
+                        <param name="state" style="query" />
+                        <param name="attachmentIds" style="query" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs">
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs/{jobId}/owners">
+                <param name="jobId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs/{jobId}/tasks">
+                <param name="jobId" style="template" />
+                <method name="GET">
+                    <request>
+                        <param name="state" style="query" default="all" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs/{jobId}/parent">
+                <param name="jobId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs/{jobId}/children">
+                <param name="jobId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="tasks/{taskId}">
+                <param name="taskId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="tasks/{taskId}/action/{action}">
+                <param name="taskId" style="template" />
+                <param name="action" style="template" />
+                <method name="PUT">
+                    <request>
+                        <param name="comment" style="query" />
+                        <param name="choice" style="query" />
+                        <param name="users" style="query" />
+                    </request>
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="jobs/{jobId}/action/{action}">
+                <param name="jobId" style="template" />
+                <param name="action" style="template" />
+                <method name="PUT">
+                    <request>
+                        <param name="comment" style="query" />
+                    </request>
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="objectmanager">
+            <resource path="{operation}">
+                <param name="operation" style="template" />
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="folders">
+            <method name="GET">
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <method name="POST">
+                <request>
+                    <representation mediaType="application/json" />
+                </request>
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <resource path="{folderId}">
+                <param name="folderId" style="template" />
+                <method name="DELETE">
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{folderId}">
+                <param name="folderId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{folderId}/containees">
+                <param name="folderId" style="template" />
+                <method name="GET">
+                    <request>
+                        <param name="includeContainees" style="query" default="BOTH" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="/template">
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{folderId}">
+                <param name="folderId" style="template" />
+                <method name="PUT">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{folderId}">
+                <param name="folderId" style="template" />
+            </resource>
+            <resource path="{folderId}/containees">
+                <param name="folderId" style="template" />
+                <param name="includeContainees" style="query" default="BOTH" />
+            </resource>
+            <resource path="/template" />
+        </resource>
+        <resource path="contents">
+            <method name="POST">
+                <request>
+                    <representation mediaType="application/json" />
+                </request>
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/associations">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <request>
+                        <param name="parents" style="query" default="" />
+                        <param name="children" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/associations/children">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <request>
+                        <param name="children" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/associations/parents">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <request>
+                        <param name="parents" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/document/{filename}">
+                <param name="id" style="template" />
+                <param name="filename" style="template" />
+                <method name="GET">
+                    <response status="200" />
+                </method>
+            </resource>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <request>
+                        <param name="fieldFilters" style="query" default="" />
+                        <param name="includeAssociations" style="query" default="NONE" />
+                        <param name="associationTypeFilters" style="query" default="" />
+                        <param name="reportingPeriodLabel" style="query" default="Current Reporting Period" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="template">
+                <method name="GET">
+                    <request>
+                        <param name="typeId" style="query" />
+                        <param name="fileTypeId" style="query" default="" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/associations">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/associations/parents">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/associations/children">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/associations/parents/{parentId}">
+                <param name="id" style="template" />
+                <param name="parentId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/associations/children/{childId}">
+                <param name="id" style="template" />
+                <param name="childId" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/associations">
+                <param name="id" style="template" />
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/associations/children">
+                <param name="id" style="template" />
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/associations/parents">
+                <param name="id" style="template" />
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/document/{filename}">
+                <param name="id" style="template" />
+                <param name="filename" style="template" />
+                <method name="PUT">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/auditlogs/associations">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <request>
+                        <param name="associationFilters" style="query" default="" />
+                        <param name="startDate" style="query" default="" />
+                        <param name="endDate" style="query" default="" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/auditlogs/fields">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <request>
+                        <param name="fieldFilters" style="query" default="" />
+                        <param name="startDate" style="query" default="" />
+                        <param name="endDate" style="query" default="" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/action/copy">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/action/move">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/action/lock">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/action/unlock">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/action/removeAllLocks">
+                <param name="id" style="template" />
+                <method name="PUT">
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <param name="fieldFilters" style="query" default="" />
+                <param name="includeAssociations" style="query" default="NONE" />
+                <param name="associationTypeFilters" style="query" default="" />
+                <param name="reportingPeriodLabel" style="query" default="Current Reporting Period" />
+            </resource>
+            <resource path="template">
+                <param name="typeId" style="query" />
+                <param name="fileTypeId" style="query" default="" />
+            </resource>
+            <resource path="{id}/associations">
+                <param name="id" style="template" />
+            </resource>
+            <resource path="{id}/associations/parents">
+                <param name="id" style="template" />
+            </resource>
+            <resource path="{id}/associations/children">
+                <param name="id" style="template" />
+            </resource>
+            <resource path="{id}/associations/parents/{parentId}">
+                <param name="id" style="template" />
+                <param name="parentId" style="template" />
+            </resource>
+            <resource path="{id}/associations/children/{childId}">
+                <param name="id" style="template" />
+                <param name="childId" style="template" />
+            </resource>
+        </resource>
+        <resource path="security/groups">
+            <method name="GET">
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <method name="POST">
+                <request>
+                    <representation mediaType="application/json" />
+                </request>
+                <response status="200">
+                    <representation mediaType="application/json" />
+                </response>
+            </method>
+            <resource path="{id}">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/subgroups">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/users">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/permissions">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/roles">
+                <param name="id" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="{id}/subgroups">
+                <param name="id" style="template" />
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/subgroups">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <request>
+                        <param name="subgroups" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/users">
+                <param name="id" style="template" />
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/users">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <request>
+                        <param name="users" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/roles">
+                <param name="id" style="template" />
+                <method name="POST">
+                    <request>
+                        <param name="role" style="query" default="" />
+                        <param name="context" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+            <resource path="{id}/roles">
+                <param name="id" style="template" />
+                <method name="DELETE">
+                    <request>
+                        <param name="role" style="query" default="" />
+                        <param name="context" style="query" default="" />
+                    </request>
+                    <response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+                </method>
+            </resource>
+        </resource>
+        <resource path="">
+            <method name="GET">
+                <response status="200">
+                    <representation mediaType="application/json" />
+                    <representation mediaType="application/vnd.sun.wadl+xml" />
+                </response>
+            </method>
+            <method name="OPTIONS">
+                <response status="200">
+                    <representation mediaType="application/json" />
+                    <representation mediaType="application/vnd.sun.wadl+xml" />
+                </response>
+            </method>
+        </resource>
+        <resource path="configuration">
+            <resource path="adminMode">
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="adminMode">
+                <method name="PUT">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="enable" style="query" type="xs:boolean" />
+                    </request>
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="currencies">
+                <method name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="onlyEnabled" style="query" type="xs:boolean" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="currencies/base">
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="currencies/{code}">
+                <param name="code" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="currencies/{code}">
+                <param name="code" style="template" />
+                <method name="PUT">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="enable" style="query" type="xs:boolean" />
+                    </request>
+                    <response>
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="currencies/{code}/exchangeRates">
+                <param name="code" style="template" />
+                <method name="GET">
+                    <request>
+                        <param name="date" style="query" />
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="history" style="query" type="xs:boolean" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="text/{textKey}">
+                <param name="textKey" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="settings/{settingPath}">
+                <param name="settingPath" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="reportingPeriods">
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="reportingPeriods/current">
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="reportingPeriods/{reportingPeriod}">
+                <param name="reportingPeriod" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="profiles">
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="profiles/{profile}">
+                <param name="profile" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="profiles/{profile}/definition">
+                <param name="profile" style="template" />
+                <method name="GET">
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+            <resource path="profiles/fields">
+                <method name="GET">
+                    <request>
+                        <param name="profile" style="query" />
+                        <param name="type" style="query" />
+                        <param name="view" style="query" />
+                    </request>
+                    <response status="200">
+                        <representation mediaType="application/json" />
+                    </response>
+                </method>
+            </resource>
+        </resource>
+    </resources>
+</application>
