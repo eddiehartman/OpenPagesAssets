@@ -1,0 +1,16 @@
+Name={description}.txt
+Description=Created during migration of ePolicy CSD {CSD_NAME}
+content={GTS-Clause:Clause Content}
+OPSS-File:Document Type=Other
+OPSS-File:Active=Yes
+OPSS-File:Abstract=This Clause attachment was migrated from ePolicy \
+   Policy: CSD-{ePolicy_Account_Name}-v{epolicy_policy_version}\
+   Policy File name: {CSD_Filename}.{CSD_Fileext}\
+   Status: {csd_status} \
+   Revision: {CSD_Revision} \
+   Last Updated: {formatDate(entry.CSD_UPDATED_TS, "yyyy-MM-dd HH:mm:ss z")} \
+   ----------------- \
+   Account short name: {ePolicy_Account_ShortName} \
+   Country: {Country_FullName} \
+   Environment: {ENVIRONMENT} \
+   Sub customer: {ACCOUNT_NUMBER}

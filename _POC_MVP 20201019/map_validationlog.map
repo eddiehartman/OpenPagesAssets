@@ -1,0 +1,12 @@
+Template name={Use_Template_Name}
+Template version={document_version}
+Rev={revision}
+Function={mapFunction(entry.getString("DB2_FUNC"))}
+User={USER_NOTES_EMAIL}
+Action={ACTION_NAME}
+Performer={NOTES_EMAIL}
+Performer role={PERFORMER_ROLE}
+Date={entry.TS == null ? null : (formatDate(entry.getObject("TS"), "yyyy-MM-dd HH.mm.ss.SSSSSS z"))}
+Operation={ACT}
+Action status={ACTION_STATUS}
+Comment={COMMENT}

@@ -1,0 +1,54 @@
+//Questions for Blade-
+CSD to Policy Map 
+a) sub-version
+b) renewal/approval dates?
+
+
+
+----- All OpenPages Policy Fields
+Created By: 2703
+Creation Date: Thu Jun 18 08:32:51 CEST 2020
+GTS-Pol-Shared:TCompareHelper: ${  "labelKey": "gts.helper.label.default",  "path": "/app/custom/ibm_gts/PolicyCompare/view",  "modes": ["view", "edit"],  GTS-Pol-Shared:TDocGenHelper: ${  "labelKey": "gts.helper.label.default",  "path": "/app/custom/ibm_gts/PolicyDocumentGenerator/view",  "modes": ["view", GTS-Policy:Customer Rep: Mani
+GTS-Policy:DPE: jmmathis@us.ibm.com
+GTS-Policy:TRenewalHelper: ${  "labelKey": "gts.helper.label.default",  "path": "/app/custom/ibm_gts/PolicyRenewal/view",  "modes": ["view", "edit"],  Last Modification Date: Thu Jun 18 09:30:56 CEST 2020
+Last Modified By: 2703
+Location: /GTS-AG/North America/US/United States/Industrial/Acc-162-AG/POL-64-Acc-162-AG
+Name: POL-64-Acc-162-AG
+OPSS-Pol:Approval Status: In Revision
+OPSS-Pol:Approval Status_index: 1
+OPSS-Pol:Change Significance: Minor
+OPSS-Pol:Change Significance_index: 2
+OPSS-Pol:CreatePolicy: ${"labelKey" : "pcm.creator.label.policycomputedlink","path" : "/Wizard/OPS_PolicyHelper.jsp","modes" : ["view", "edit"],
+OPSS-Pol:Next Review Date: Sat Dec 18 00:00:00 CET 2021
+OPSS-Pol:OpenPolicyRevision: ${"labelKey" : "pcm.policy.unlock.label.computedlink.open.for.revision","path" : "/Wizard/OPS_PolicyUnlockHelper.jsp","modes" OPSS-Pol:Policy In Revision: No
+OPSS-Pol:Policy In Revision_index: 2
+OPSS-Pol:Publishing Status: Not Published
+OPSS-Pol:Publishing Status_index: 1
+OPSS-Pol:ReopenPolicy: ${"labelKey" : "pcm.policy.unlock.label.computedlink.reopen.policy","path" : "/Wizard/OPS_PolicyUnlockHelper.jsp","modes" : ["view"]OPSS-Pol:RevDesc: First Policy for this Client.
+OPSS-Pol:RunTrigger: Yes
+OPSS-Pol:RunTrigger_index: 1
+OPSS-Pol:Status: Redraft
+OPSS-Pol:Status_index: 15
+OPSS-Pol:Type: CSD
+OPSS-Pol:Type_index: 4
+OPSS-Pol:Version: 1.0
+OPSS-Pol:ViewPolicy: ${"labelKey" : "pcm.creator.label.policyviewcomputedlink","path" : "/Wizard/OPS_PolicyHelperView.jsp","modes" : ["view", "edit"],
+Orphan: Not Orphan
+Resource ID: 20505
+
+----
+? Which OP Fields correspond to the [Fields] listed in 2.2?
+a) [ID] <- CSD-<Account>-v<Rev>.<sub-version>
+Example CSD-Acme Enterprises-v2.3
+b) [Document Name ID] <- CSD-<Account>-v<Rev>.<sub-
+version>
+Example CSD-Acme Enterprises-v2.3
+c) [Type] <- CSD
+d) [Status] – See requirement 2.7
+e) [Document Version] <- v<Rev>.<sub-version>
+f) [Renewal Date] <- <Current approval date> -- ???
+g) [Published Date] <- <Current approval date> -- ???
+h) [Review Date]<-<Next review date>
+i) [Retired Date] – NOT MIGRATED
+j) [Clause Controls] – See Requirements 2.4 and 4
+k) [Customer Representative] – NOT MIGRATED

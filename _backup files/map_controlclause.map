@@ -1,0 +1,4 @@
+GTS-ClauseCtl:Col1={ref}
+GTS-ClauseCtl:Col2={entry.getString("BASE_RR") || entry.getString("REQUIREMENT")}
+GTS-ClauseCtl:Col3={entry.getString("IBM") || entry.getString("REC_VALUE")}
+GTS-ClauseCtl:Col4={CUST_XYZ}
