@@ -1,3 +1,0 @@
-select name , form from 
-{entry.getString("history_flag")== "N" ? "epolicy.xdocument" : "epolicy.xdocument_history"}
-where id = '{id}' and is_deleted = 'N' 
